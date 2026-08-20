@@ -1,0 +1,60 @@
+@startuml
+left to right direction
+actor visiteur as v
+package Authentifié {
+  actor Client as c
+  actor "Restaurant partenaire" as rp
+  actor Modérateur as m
+  actor Administrateur as a
+  actor Travailleur as l
+}
+package "Site internet"{
+  usecase "S'inscrire" as UC1
+  usecase "voir la liste des restaurant" as UC2
+  usecase "se connecter" as UC3
+  usecase "supprimer compte" as UC4
+  usecase "modifier compte" as UC5
+  usecase "consulter les mission" as UC6
+  usecase "accepter les missions" as UC7
+  usecase "gérer les pages restaurants" as UC8
+  usecase "créer un compte modérateur" as UC9
+  usecase "créer un compte admin" as UC10
+  usecase "supprimer compte admin" as UC11
+  usecase "supprimer compte admin" as UC12
+  usecase "voir les nouvelles fonctionnalités" as UC13
+  usecase "approuver les nouvelles fonctionnalités" as UC14
+  usecase "commander" as UC15
+ usecase "payer" as UC16
+ usecase "voir compte bloquer" as UC17
+ usecase "voir information prochain conseil général" as UC18
+}
+v --> UC1
+v --> UC2
+c --> UC2
+
+m --> UC3
+c --> UC3
+a --> UC3
+rp --> UC3
+
+l--> UC3
+l--> UC6
+
+rp--> UC8
+
+a--> UC9
+a--> UC10
+a--> UC11
+a--> UC12
+
+m --> UC14
+m --> UC17
+m --> UC18
+
+(UC4) .> (UC3) : extends
+(UC5) .> (UC3) : extends
+(UC7) .> (UC6) : extends
+(UC13) .> (UC14) : extends
+(UC15) .> (UC2) : extends
+(UC16) .> (UC15) : include
+@enduml
