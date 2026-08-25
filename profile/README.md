@@ -1,1 +1,1 @@
-Bonjour bienvenue sur le projet CCSOP livraison
+Hello, and welcome to the CCSOP Delivery Project
