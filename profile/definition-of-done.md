@@ -6,6 +6,7 @@ Apply this to every change before declaring it done.
 
 ### Correctness
 - [ ] All acceptance criteria for the task are met
+- [ ]  Only accounts of the appropriate type can access the homepage dedicated to that type of user.
 - [ ] Code runs and behaves as intended, verified at runtime, not just compiled or typechecked
 - [ ] New behavior is covered by tests that fail without the change and pass with it
 - [ ] Existing tests still pass; no regressions introduced
