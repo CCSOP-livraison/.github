@@ -20,7 +20,7 @@ package "Site internet"{
   usecase "créer un compte modérateur" as UC9
   usecase "créer un compte admin" as UC10
   usecase "supprimer compte admin" as UC11
-  usecase "supprimer compte admin" as UC12
+  usecase "supprimer compte modérateur" as UC12
   usecase "voir les nouvelles fonctionnalités" as UC13
   usecase "approuver les nouvelles fonctionnalités" as UC14
   usecase "commander" as UC15
@@ -29,7 +29,6 @@ package "Site internet"{
  usecase "voir information prochain conseil général" as UC18
 }
 v --> UC1
-v --> UC2
 c --> UC2
 
 m --> UC3

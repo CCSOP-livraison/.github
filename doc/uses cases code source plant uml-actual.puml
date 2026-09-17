@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+actor visiteur as v
+package Authentifié {
+  actor Client as c
+  actor Livreur as l
+}
+package "Site internet"{
+  usecase "S'inscrire" as UC1
+  usecase "voir la liste des restaurant" as UC2
+  usecase "se connecter" as UC3
+  usecase "consulter les mission" as UC6
+  usecase "commander" as UC15
+
+}
+v --> UC1
+c --> UC2
+c --> UC3
+l--> UC3
+l--> UC6
+
+(UC15) .> (UC2) : extends
+@enduml
