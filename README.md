@@ -49,5 +49,5 @@ Vous retrouverez le Guide utilisateur ici : [Guide utilisateur](https://github.c
 ---
 
 ## Definition of done 
-Les fonctionnalités ont étaient vérifié au travers de la [Definition of done](https://github.com/CCSOP-livraison/.github/blob/main/profile/definition-of-done.md)
+Les fonctionnalités ont été vérifié au travers de la [Definition of done](https://github.com/CCSOP-livraison/.github/blob/main/profile/definition-of-done.md)
 
